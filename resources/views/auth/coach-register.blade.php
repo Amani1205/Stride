@@ -9,6 +9,8 @@
         <form method="POST" action="{{ route('register') }}">
             @csrf
 
+            <h1 style="text-align: center;">Coach Registration</h1>
+
             <input type="hidden" id="usertype" name="usertype" value="coach" />
 
             <div>

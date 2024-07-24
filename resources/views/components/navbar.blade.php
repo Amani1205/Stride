@@ -1,7 +1,7 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#">
-            <img src="./images/Stride Logo.png" alt="Stride Logo">
+            <img src="./images/Stride Orange.png" alt="Stride Logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -29,7 +29,7 @@
                     @else
                         <a href="{{ route('login') }}" class="loginbtn">Log in</a>
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="registerbtn">Register</a>
+                            <a href="{{ route('selection') }}" class="registerbtn">Register</a>
                         @endif
                     @endauth
                 @endif

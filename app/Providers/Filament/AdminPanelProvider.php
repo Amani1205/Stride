@@ -27,6 +27,8 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login()
+            ->favicon(asset('images/Stride Orange.png'))
+            ->brandName('Stride')
             ->colors([
                 'primary' => Color::Amber,
             ])

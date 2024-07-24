@@ -39,7 +39,7 @@
 </section>
 
 <section class="about-stride">
-    <img src="./images/Stride Logo.png" alt="Stride Logo">
+    <img src="./images/Stride Orange.png" alt="Stride Logo">
     <h2>ABOUT STRIDE</h2>
     <p>Welcome to Stride, your go-to platform for booking stadiums and hiring professional coaches. Designed for athletes of all levels, Stride offers seamless access to top-notch facilities and expert guidance. Discover a community dedicated to helping you elevate your game and achieve your fullest potential. Find your greatness with Stride.</p>
 </section>
