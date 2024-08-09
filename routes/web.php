@@ -2,13 +2,21 @@
 
 use Illuminate\Support\Facades\Route;
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 Route::get('/', function () {
     return view('pages.index');
 })->name('index');
+
+Route::get('/sports', function () {
+    return view('pages.sports');
+})->name('sports');
+
+Route::get('/contact', function () {
+    return view('pages.contact');
+})->name('contact');
+
+Route::get('/about', function () {
+    return view('pages.about');
+})->name('about');
 
 Route::get('/selection', function () {
     return view('selection');
@@ -25,9 +33,6 @@ Route::get('/coach-register', function () {
 Route::get('/stadium-register', function () {
     return view('auth/stadium-register');
 })->name('stadium-register');
-
-
-
 
 
 
