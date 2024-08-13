@@ -10,10 +10,11 @@ class coach extends Model
     use HasFactory;
 
     protected $fillable =
-    ['user_id','rate','time_slots'];
+    ['user_id','rate','image','time_slots'];
 
     protected $casts = [
         'time_slots' => 'array',
+        'image' => 'array'
     ];
 
     public function user()

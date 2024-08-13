@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CoachController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -33,6 +34,10 @@ Route::get('/coach-register', function () {
 Route::get('/stadium-register', function () {
     return view('auth/stadium-register');
 })->name('stadium-register');
+
+
+
+Route::get('/coaches', [CoachController::class, 'coaches'])->name('coaches');
 
 
 

@@ -2,6 +2,10 @@
 
 namespace App\Providers\Filament;
 
+use App\Filament\Resources\AdminResource\Widgets\CoachExperienceLevelChart;
+use App\Filament\Resources\AdminResource\Widgets\CoachingSportChart;
+use App\Filament\Resources\AdminResource\Widgets\GroundTable;
+use App\Filament\Resources\AdminResource\Widgets\UserStatsOverview;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
@@ -41,6 +45,10 @@ class AdminPanelProvider extends PanelProvider
             ->widgets([
                 Widgets\AccountWidget::class,
                 // Widgets\FilamentInfoWidget::class,
+                UserStatsOverview::class,
+                CoachingSportChart::class,
+                CoachExperienceLevelChart::class,
+                GroundTable::class,
             ])
             ->middleware([
                 EncryptCookies::class,

@@ -11,7 +11,7 @@
 
             <h1 style="text-align: center;">Coach Registration</h1>
 
-            <input type="hidden" id="usertype" name="usertype" value="coach" />
+            <input type="hidden" id="usertype" name="usertype" value="Coach" />
 
             <div>
                 <x-label for="name" value="{{ __('Name') }}" />
@@ -38,10 +38,25 @@
                 <x-label for="available_sports" class="hidden" value="{{ __('Available Sports') }}" />
                 <select id="available_sports" name="available_sports[]" class="hidden" multiple>
                     <option value="null" selected>Null</option>
-                    <option value="soccer">Soccer</option>
-                    <option value="basketball">Basketball</option>
-                    <option value="tennis">Tennis</option>
-                    <option value="swimming">Swimming</option>
+                    <option value="Soccer">Soccer</option>
+                    <option value="Basketball">Basketball</option>
+                    <option value="Tennis">Tennis</option>
+                    <option value="Swimming">Swimming</option>
+                    <option value="Cricket">Cricket</option>
+                    <option value="Football">Football</option>
+                    <option value="Rugby">Rugby</option>
+                    <option value="Boxing">Boxing</option>
+                    <option value="Hockey">Hockey</option>
+                    <option value="Volleyball">Volleyball</option>
+                    <option value="Badminton">Badminton</option>
+                    <option value="Baseball">Baseball</option>
+                    <option value="Table Tennis">Table Tennis</option>
+                    <option value="Athletics">Athletics</option>
+                    <option value="Karate">Karate</option>
+                    <option value="Chess">Chess</option>
+
+
+
                     <!-- Add more sports as needed -->
                 </select>
             </div>
@@ -49,10 +64,23 @@
             <div class="mt-4">
                 <x-label for="coaching_sport" value="{{ __('Select Coaching Sport') }}" />
                 <select id="coaching_sport" class="block w-full mt-1" name="coaching_sport">
-                    <option value="soccer">Soccer</option>
-                    <option value="basketball">Basketball</option>
-                    <option value="tennis">Tennis</option>
-                    <option value="swimming">Swimming</option>
+                    <option value="Soccer">Soccer</option>
+                    <option value="Basketball">Basketball</option>
+                    <option value="Tennis">Tennis</option>
+                    <option value="Swimming">Swimming</option>
+                    <option value="Cricket">Cricket</option>
+                    <option value="Football">Football</option>
+                    <option value="Rugby">Rugby</option>
+                    <option value="Boxing">Boxing</option>
+                    <option value="Hockey">Hockey</option>
+                    <option value="Volleyball">Volleyball</option>
+                    <option value="Badminton">Badminton</option>
+                    <option value="Baseball">Baseball</option>
+                    <option value="Table Tennis">Table Tennis</option>
+                    <option value="Athletics">Athletics</option>
+                    <option value="Karate">Karate</option>
+                    <option value="Chess">Chess</option>
+
                     <!-- Add more sports as needed -->
                 </select>
             </div>
@@ -65,9 +93,9 @@
                     <div class="mt-4">
                         <x-label for="level_of_experience" value="{{ __('Level of Experience') }}" />
                         <select id="level_of_experience" name="level_of_experience" class="block w-full mt-1">
-                            <option value="district">District Level</option>
-                            <option value="national">National Level</option>
-                            <option value="international">International Level</option>
+                            <option value="District">District Level</option>
+                            <option value="National">National Level</option>
+                            <option value="International">International Level</option>
                         </select>
                     </div>
 

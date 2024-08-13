@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('stadia', function (Blueprint $table) {
+        Schema::create('grounds', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->decimal('rate', 8, 2);
@@ -19,7 +19,7 @@ return new class extends Migration
             // timeslot
             $table->json('time_slots');
             $table->json('images')->nullable();
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('user_id')->references('id')->on('users')->cascadeOnDelete();
             $table->timestamps();
         });
     }
@@ -29,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('stadia');
+        Schema::dropIfExists('grounds');
     }
 };

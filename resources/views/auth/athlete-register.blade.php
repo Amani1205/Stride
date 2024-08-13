@@ -11,7 +11,7 @@
 
             <h1 style="text-align: center;">Athlete Registration</h1>
 
-            <input type="hidden" id="usertype" name="usertype" value="athlete" />
+            <input type="hidden" id="usertype" name="usertype" value="Athlete" />
 
             <div>
                 <x-label for="name" value="{{ __('Name') }}" />
@@ -24,8 +24,8 @@
             </div>
 
             <div class="mt-4">
-                <x-label for="contact_number" class="hidden" value="{{ __('Contact Number') }}" />
-                <x-input id="contact_number" class="hidden" type="hidden" name="contact_number" :value="old('contact_number', '0000')" required autocomplete="contact_number" />
+                <x-label for="contact_number" value="{{ __('Contact Number') }}" />
+                <x-input id="contact_number" class="block w-full mt-1" type="text" name="contact_number" :value="old('contact_number')" required autocomplete="contact_number" />
             </div>
 
 {{-- start of hidden for athletes --}}
@@ -52,6 +52,7 @@
                     <div class="mt-4">
                         <x-label for="coaching_sport" class="hidden" value="{{ __('Select Coaching Sport') }}" />
                         <select id="coaching_sport" name="coaching_sport" class="hidden">
+                            <option value="null" selected>Null</option>
                             <option value="soccer">Soccer</option>
                             <option value="basketball">Basketball</option>
                             <option value="tennis">Tennis</option>
@@ -68,6 +69,7 @@
                     <div class="mt-4">
                         <x-label for="level_of_experience" class="hidden" value="{{ __('Level of Experience') }}" />
                         <select id="level_of_experience" name="level_of_experience" class="hidden">
+                            <option value="null" selected>Null</option>
                             <option value="district">District Level</option>
                             <option value="national">National Level</option>
                             <option value="international">International Level</option>

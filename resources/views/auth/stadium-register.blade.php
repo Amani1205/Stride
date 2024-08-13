@@ -11,7 +11,7 @@
 
             <h1 style="text-align: center;">Stadium Registration</h1>
 
-            <input type="hidden" id="usertype" name="usertype" value="Stadium_Owner" />
+            <input type="hidden" id="usertype" name="usertype" value="Ground Owner" />
 
             <div>
                 <x-label for="name" value="{{ __('Stadium Name') }}" />
@@ -37,10 +37,24 @@
             <div class="mt-4">
                 <x-label for="available_sports" value="{{ __('Available Sports') }}" />
                 <select id="available_sports" name="available_sports[]" class="block w-full mt-1" multiple>
-                    <option value="soccer">Soccer</option>
-                    <option value="basketball">Basketball</option>
-                    <option value="tennis">Tennis</option>
-                    <option value="swimming">Swimming</option>
+
+                    <option value="Soccer">Soccer</option>
+                    <option value="Cricket">Cricket</option>
+                    <option value="Football">Football</option>
+                    <option value="Basketball">Basketball</option>
+                    <option value="Rugby">Rugby</option>
+                    <option value="Boxing">Boxing</option>
+                    <option value="Hockey">Hockey</option>
+                    <option value="Tennis">Tennis</option>
+                    <option value="Swimming">Swimming</option>
+                    <option value="Volleyball">Volleyball</option>
+                    <option value="Badminton">Badminton</option>
+                    <option value="Baseball">Baseball</option>
+                    <option value="Table Tennis">Table Tennis</option>
+                    <option value="Athletics">Athletics</option>
+                    <option value="Karate">Karate</option>
+                    <option value="Chess">Chess</option>
+
                     <!-- Add more sports as needed -->
                 </select>
             </div>
