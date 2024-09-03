@@ -1,6 +1,10 @@
 <?php
 
-use App\Http\Controllers\CoachController;
+use App\Http\Controllers\SportsController;
+
+// use App\Http\Controllers\GroundController;
+
+
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -37,7 +41,62 @@ Route::get('/stadium-register', function () {
 
 
 
-Route::get('/coaches', [CoachController::class, 'coaches'])->name('coaches');
+
+
+// Cricket/
+Route::get('/cricket', [SportsController::class, 'cricket'])->name('cricket');
+
+// Athletics
+Route::get('/athletics', [SportsController::class, 'athletics'])->name('athletics');
+
+// Chess
+Route::get('/chess', [SportsController::class, 'chess'])->name('chess');
+
+// Karate
+Route::get('/karate', [SportsController::class, 'karate'])->name('karate');
+
+// Football
+Route::get('/football', [SportsController::class, 'football'])->name('football');
+
+// Basketball
+Route::get('/basketball', [SportsController::class, 'basketball'])->name('basketball');
+
+// Tennis
+Route::get('/tennis', [SportsController::class, 'tennis'])->name('tennis');
+
+// Swimming
+Route::get('/swimming', [SportsController::class, 'swimming'])->name('swimming');
+
+// Rugby
+Route::get('/rugby', [SportsController::class, 'rugby'])->name('rugby');
+
+// Boxing
+Route::get('/boxing', [SportsController::class, 'boxing'])->name('boxing');
+
+// Hockey
+Route::get('/hockey', [SportsController::class, 'hockey'])->name('hockey');
+
+// Volleyball
+Route::get('/volleyball', [SportsController::class, 'volleyball'])->name('volleyball');
+
+// Badminton
+Route::get('/badminton', [SportsController::class, 'badminton'])->name('badminton');
+
+// Baseball
+Route::get('/baseball', [SportsController::class, 'baseball'])->name('baseball');
+
+// Table Tennis
+Route::get('/tabletennis', [SportsController::class, 'tabletennis'])->name('tabletennis');
+
+
+
+
+Route::get('/coach/{id}', [SportsController::class, 'showCoach'])->name('coach.show');
+Route::get('/ground/{id}', [SportsController::class, 'showGround'])->name('ground.show');
+
+
+
+
 
 
 

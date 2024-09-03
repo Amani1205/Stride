@@ -79,21 +79,9 @@ class User extends Authenticatable implements FilamentUser
     public function canAccessPanel(\Filament\Panel $panel): bool
 {
     // Admins can access all panels
-    if (str_ends_with($this->email, '@stride.com')) {
-        return true;
-    }
-
-    // Stride users can access only the app panel
-    if ($panel->getId() === 'app') {
-        return str_ends_with($this->email, '@strideuser.com');
-    }
-
-    // Stride ground users can access only the ground panel
-    if ($panel->getId() === 'ground') {
-        return str_ends_with($this->email, '@strideground.com');
-    }
-
-    // Default to false if none of the conditions are met
-    return false;
+    if ($panel->getId()=== 'admin'){
+        return str_ends_with($this->email, '@stride.com');
+}
+return true;
 }
 }

@@ -122,8 +122,8 @@ class UserResource extends Resource
                     'Chess' => 'Chess',
                 ])
                 ->visible(fn ($get) => $get('usertype') === 'Ground Owner')
-                ->required()
-                ->default(fn ($record) => is_array($record->available_sports) ? $record->available_sports : json_decode($record->available_sports, true) ?? []),
+                ->required(),
+                // ->default(fn ($record) => is_array($record->available_sports) ? $record->available_sports : json_decode($record->available_sports, true) ?? []),
 
             TextInput::make('email')
                 ->label('Email Address')

@@ -12,31 +12,43 @@
     <h2>EXPLORE SPORTS</h2>
     <div class="sports-icons">
         <div class="sport-icon">
-            <img src="./images/Cricket.png" alt="Cricket">
-            <p>Cricket</p>
+            <a href="/cricket">
+                <img src="./images/Cricket.png" alt="Cricket">
+                
+            </a>
         </div>
         <div class="sport-icon">
-            <img src="./images/Football.png" alt="Football">
-            <p>Football</p>
+            <a href="/football">
+                <img src="./images/Football.png" alt="Football">
+                
+            </a>
         </div>
         <div class="sport-icon">
-            <img src="./images/Basketball.png" alt="Basketball">
-            <p>Basketball</p>
+            <a href="/basketball">
+                <img src="./images/Basketball.png" alt="Basketball">
+                
+            </a>
         </div>
         <div class="sport-icon">
-            <img src="./images/Rugby.png" alt="Rugby">
-            <p>Rugby</p>
+            <a href="/rugby">
+                <img src="./images/Rugby.png" alt="Rugby">
+                
+            </a>
         </div>
         <div class="sport-icon">
-            <img src="./images/Boxing.png" alt="Boxing">
-            <p>Boxing</p>
+            <a href="/boxing">
+                <img src="./images/Boxing.png" alt="Boxing">
+               
+            </a>
         </div>
         <div class="sport-icon">
-            <a href="Sports.html"><img src="./images/More.png" alt="See More"></a>
-            <p>See More</p>
+            <a href="/sports">
+                <img src="./images/More.png" alt="See More">
+            </a>    
         </div>
     </div>
 </section>
+
 
 <section class="about-stride">
     <img src="./images/Stride Orange.png" alt="Stride Logo">
