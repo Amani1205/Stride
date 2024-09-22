@@ -15,6 +15,10 @@ Route::get('/sports', function () {
     return view('pages.sports');
 })->name('sports');
 
+Route::get('/coaches', function () {
+    return view('pages.coach');
+})->name('coaches');
+
 Route::get('/contact', function () {
     return view('pages.contact');
 })->name('contact');
@@ -93,6 +97,19 @@ Route::get('/tabletennis', [SportsController::class, 'tabletennis'])->name('tabl
 
 Route::get('/coach/{id}', [SportsController::class, 'showCoach'])->name('coach.show');
 Route::get('/ground/{id}', [SportsController::class, 'showGround'])->name('ground.show');
+// Route to view all coaches with optional filter
+Route::get('/coaches', [SportsController::class, 'allCoaches'])->name('coaches.all');
+
+// Route to apply filter
+Route::get('/coaches/filter', [SportsController::class, 'allCoaches'])->name('coaches.filter');
+// Route to display all grounds
+Route::get('/grounds', [SportsController::class, 'allGrounds'])->name('grounds.all');
+
+
+
+
+
+
 
 
 

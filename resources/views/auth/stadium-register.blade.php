@@ -37,8 +37,6 @@
             <div class="mt-4">
                 <x-label for="available_sports" value="{{ __('Available Sports') }}" />
                 <select id="available_sports" name="available_sports[]" class="block w-full mt-1" multiple>
-
-                    <option value="Soccer">Soccer</option>
                     <option value="Cricket">Cricket</option>
                     <option value="Football">Football</option>
                     <option value="Basketball">Basketball</option>

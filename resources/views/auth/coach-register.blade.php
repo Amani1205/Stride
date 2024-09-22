@@ -38,7 +38,6 @@
                 <x-label for="available_sports" class="hidden" value="{{ __('Available Sports') }}" />
                 <select id="available_sports" name="available_sports[]" class="hidden" multiple>
                     <option value="null" selected>Null</option>
-                    <option value="Soccer">Soccer</option>
                     <option value="Basketball">Basketball</option>
                     <option value="Tennis">Tennis</option>
                     <option value="Swimming">Swimming</option>

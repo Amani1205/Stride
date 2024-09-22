@@ -43,11 +43,11 @@ class CreateNewUser implements CreatesNewUsers
             'usertype' => $input['usertype'],
             'contact_number' => $input['contact_number'],
             'stadium_address' => $input['stadium_address'],
-            'available_sports' => json_encode($input['available_sports']),
+            'available_sports' => $input['available_sports'],
             'years_of_experience' => $input['years_of_experience'],
             'level_of_experience' => $input['level_of_experience'],
             'coaching_sport' => $input['coaching_sport'],
-            'preferred_sports' => json_encode($input['preferred_sports']),
+            'preferred_sports' => $input['preferred_sports'],
         ]);
     }
 }

@@ -104,7 +104,6 @@ class UserResource extends Resource
                 ->label('Available Sports')
                 ->multiple()
                 ->options([
-                    'Soccer'=> 'Soccer',
                     'Cricket' => 'Cricket',
                     'Football' => 'Football',
                     'Basketball' => 'Basketball',
